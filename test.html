@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <div class="headerBox">
+      <h1 class="header" id="title"><img id="logo" src="images/insightuplogo.png"/></h1>
+      <div id="account">
+        <img src="images/account.png" id="loginButton"/>
+        <h6 id="accountTag">Account</h6>
+      </div>
+      </div>
+      <!-- Link Banner -->
+  <h1 class="header">Please Input your Test Results Below</h1>
+  <form action="testResults.html" name="test" method="GET">
+
+    <h4 class="questions">What is your biological sex?</h4>
+    <label for="Male"><b>Male</b></label>
+    <input type="radio" id="Male" name="q10" value="Male" required>
+    <br>
+    <label for="Female"><b>Female</b></label>
+    <input type="radio" id="Female" name="q10" value="Female" required>
+
+    <h4 class="questions">LDL-P (nmol/L)</h4>
+    <input type="text" id="q1" required>
+
+    <h4 class="questions">LDL-C (nmol/L)</h4>
+    <input type="text" id="q2" required>
+
+    <h4 class="questions">HDL-C (mg/dL)</h4>
+    <input type="text" id="q3" required>
+
+    <h4 class="questions">HDL-P Total (umol/L)</h4>
+    <input type="text" id="q4" required>
+
+    <h4 class="questions">Triglyceride (mg/dL)</h4>
+    <input type="text" id="q5" required>
+
+    <h4 class="questions">Total Cholesterol (mg/dL)</h4>
+    <input type="text" id="q6" required>
+
+    <h4 class="questions">Small LDL-P (nmol/L)</h4>
+    <input type="text" id="q7" required>
+
+    <h4 class="questions">LDL Size (nm)</h4>
+    <input type="text" id="q8" required>
+
+    <h4 class="questions">LP-IR Score</h4>
+    <input type="text" id="q9" required>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <h5 id="bad"></h5>
+  <br>
+  <br>
+  <br>
+  </body>
+  <div class="linkBanner">
+    <button class="linkButton" id="testButton">Input</button>
+    <button class="linkButton" id="testResultsButton">Analysis</button>
+    <button class="linkButton" id="resourceButton">Resources</button>
+    <button class="linkButton" id="treatmentButton">Treatment</button>
+    <button class="linkButton" id="aboutButton">About Us</button>
+  </div>
+  <script src="test.js"></script>
+  <script src="general.js"></script>
+  <script src="keyUpdate.js"></script>
+</html>

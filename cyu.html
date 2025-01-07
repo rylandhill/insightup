@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="headerBox">
+      <h1 class="header" id="title"><img id="logo" src="images/insightuplogo.png"/></h1>
+      <div id="account">
+        <img src="images/account.png" id="loginButton"/>
+        <h6 id="accountTag">Account</h6>
+      </div>
+      </div>
+      <!-- Link Banner -->
+      <div class="linkBanner">
+        <button class="linkButton" id="testButton">Input</button>
+        <button class="linkButton" id="testResultsButton">Analysis</button>
+        <button class="linkButton" id="resourceButton">Resources</button>
+        <button class="linkButton" id="treatmentButton">Treatment</button>
+        <button class="linkButton" id="aboutButton">About Us</button>
+      </div>
+  <h1 class="header">Answer the Following Questions</h1>
+  <br>
+  <img src="images/graph.jpeg" id="graphImage"/>
+  <br>
+  <h4 class="questions">What does LDL-P measure in your bloodwork?</h4>
+  <label for="numLDL" class="correct">The number of LDL particles</label>
+  <input type="radio" id="numLDL" name="LDLmeasure" value="The number of LDL particles" required>
+  <br>
+  <label for="cholCarry">The amount of cholesterol carried by the LDL particles</label>
+  <input type="radio" id="cholCarry" name="LDLmeasure" value="The amount of cholesterol carried by the LDL particles" required>
+  <br>
+  <label for="amtHigh">The amount of high-density lipoprotein</label>
+  <input type="radio" id="amtHigh" name="LDLmeasure" value="The amount of high-density lipoprotein" required>
+  <br>
+  <label for="idk">I don't know</label>
+  <input type="radio" id="idk" name="LDLmeasure" value="I don't know" required>
+  <br>
+
+  <h4 class="questions">If your LDL-P level falls below the reference range shown on the graph, which category does it enter?</h4>
+  <label for="high">High</label>
+  <input type="radio" id="high" name="category" value="High" required>
+  <br>
+  <label for="moderate">Moderate</label>
+  <input type="radio" id="moderate" name="category" value="Moderate" required>
+  <br>
+  <label for="low" class="correct">Low</label>
+  <input type="radio" id="low" name="category" value="Low" required>
+  <br>
+  <label for="idK">I don't know</label>
+  <input type="radio" id="idK" name="category" value="I don't know" required>
+  <br>
+
+  <h4 class="questions">What does HDL-C represent in your lab test result?</h4>
+  <label for="numHDL">The number of HDL particles</label>
+  <input type="radio" id="numHDL" name="HDLC" value="The number of HDL particles" required>
+  <br>
+  <label for="lipo" class="correct">The amount of high-density lipoprotein (good) cholesterol in your blood</label>
+  <input type="radio" id="lipo" name="HDLC" value="The amount of high-density lipoprotein (good) cholesterol in your blood" required>
+  <br>
+  <label for="trig">The amount of triglycerides in your blood</label>
+  <input type="radio" id="trig" name="HDLC" value="The amount of triglycerides in your blood" required>
+  <br>
+  <label for="iDK">I don't know</label>
+  <input type="radio" id="iDK" name="HDLC" value="I don't know" required>
+  <br>
+  <h4 class="questions">Based on the LDL levels indicated on the graph, which category best describes your current risk for heart disease?</h4>
+  <label for="highRisk">High risk due to elevated LDL levels</label>
+  <input type="radio" id="highRisk" name="graph" value="High risk due to elevated LDL levels" required>
+  <br>
+  <label for="lowRisk" class="correct">Low risk as LDL levels have decreased to the low range</label>
+  <input type="radio" id="lowRisk" name="graph" value="Low risk as LDL levels have decreased to the low range" required>
+  <br>
+  <label for="moderateRisk">Moderate risk as LDL levels are in the moderate range</label>
+  <input type="radio" id="moderateRisk" name="graph" value="Moderate risk as LDL levels are in the moderate range" required>
+  <br>
+  <label for="unable">Unable to determine risk without additional health information</label>
+  <input type="radio" id="unable" name="graph" value="Unable to determine risk without additional health information" required>
+  <br>
+  <h4 class="questions">What should you do after receiving these lab results?</h4>
+  <label for="ignore">Ignore the results as they are not important</label>
+  <input type="radio" id="ignore" name="next" value="Ignore the results as they are not important" required>
+  <br>
+  <label for="self">Self-prescribe cholesterol medication</label>
+  <input type="radio" id="self" name="next" value="Self-prescribe cholesterol medication" required>
+  <br>
+  <label for="doctor" class="correct">Contact a doctor to discuss your results, ask questions, or request your next blood test</label>
+  <input type="radio" id="doctor" name="next" value="Contact a doctor to discuss your results, ask questions, or request your next blood test" required>
+  <br>
+  <label for="bad">Immediately start a high-cholesterol diet</label>
+  <input type="radio" id="bad" name="next" value="Immediately start a high-cholesterol diet" required>
+  <br>
+  <h3 class="subheader" id="score"></h3>
+  <button id="submitButton">Check Answers</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script src="cyu.js"></script>
+  <script src="general.js"></script>
+  <script src="keyUpdate.js"></script>
+  </body>
+</html>

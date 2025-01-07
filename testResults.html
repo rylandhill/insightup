@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body onload="main()">
+    <div class="headerBox">
+      <h1 class="header" id="title"><img id="logo" src="images/insightuplogo.png"/></h1>
+      <div id="account">
+        <img src="images/account.png" id="loginButton"/>
+        <h6 id="accountTag">Account</h6>
+      </div>
+      </div>
+      <!-- Link Banner -->
+      <div class="linkBanner">
+        <button class="linkButton" id="testButton">Input</button>
+        <button class="linkButton" id="testResultsButton">Analysis</button>
+        <button class="linkButton" id="resourceButton">Resources</button>
+        <button class="linkButton" id="treatmentButton">Treatment</button>
+        <button class="linkButton" id="aboutButton">About Us</button>
+      </div>
+  <h1 class="header">Your Results</h1>
+  <div id="notDone">
+    <h3 class="subheader">Please enter your blood results <a href="test.html">here</a> to receive your analysis.</h1>
+  </div>
+  <div id="resultContent">
+    <h3 class="subheader">LDL-P</h3>
+    <h5 class="userSpecific" id="a1"></h5>
+    <h3 class="subheader">LDL-C</h3>
+    <h5 class="userSpecific" id="a2"></h5>
+    <h3 class="subheader">HDL-C</h3>
+    <h5 class="userSpecific" id="a3"></h5>
+    <h3 class="subheader">HDL-P Total</h3>
+    <h5 class="userSpecific" id="a4"></h5>
+    <h3 class="subheader">Triglyceride</h3>
+    <h5 class="userSpecific" id="a5"></h5>
+    <h3 class="subheader">Total Cholesterol</h3>
+    <h5 class="userSpecific" id="a6"></h5>
+    <h3 class="subheader">Small LDL-P</h3>
+    <h5 class="userSpecific" id="a7"></h5>
+    <h3 class="subheader">LDL Size</h3>
+    <h5 class="userSpecific" id="a8"></h5>
+    <h3 class="subheader">LP-IR Score</h3>
+    <h5 class="userSpecific" id="a9"></h5>
+  </div>
+  <br>
+  <br>
+  <br>
+  <script src="test.js"></script>
+  <script src="keyUpdate.js"></script>
+  <script src="general.js"></script>
+  </body>
+</html>
